@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5559cb5926074ed8b2c808f3f1354d7d" Name="Diagram1">
+        <EntityTypeShape EntityType="ShopBridgeModel.tbl_Product" Width="1.5" PointX="8" PointY="1" />
+        <EntityTypeShape EntityType="ShopBridgeModel.tbl_Product_Category" Width="1.5" PointX="5.75" PointY="1.375" />
+        <EntityTypeShape EntityType="ShopBridgeModel.tbl_Role" Width="1.5" PointX="0.75" PointY="1.25" />
+        <EntityTypeShape EntityType="ShopBridgeModel.tbl_Token" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="ShopBridgeModel.tbl_User" Width="1.5" PointX="3" PointY="1" />
+        <AssociationConnector Association="ShopBridgeModel.FK_tbl_Product_tbl_Product_Category" />
+        <AssociationConnector Association="ShopBridgeModel.FK_tbl_User_tbl_Role" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
