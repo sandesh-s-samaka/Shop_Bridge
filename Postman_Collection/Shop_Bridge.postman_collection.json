@@ -1,0 +1,758 @@
+{
+	"info": {
+		"_postman_id": "e53bc13d-927f-4bf4-ab8f-d1b0e157ba0c",
+		"name": "Shop_Bridge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\":\"product.admin\",\r\n    \"Password\":\"product.admin@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57742/api/User/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57742",
+					"path": [
+						"api",
+						"User",
+						"Login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserName\":\"product.admin\",\r\n    \"Password\":\"product.admin@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:57742/api/User/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "57742",
+							"path": [
+								"api",
+								"User",
+								"Login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RTpcSW50ZXJ2aWV3XFNob3BCcmlkZ2VcU2hvcF9CcmlkZ2VcU2hvcF9CcmlkZ2VcYXBpXFVzZXJcTG9naW4=?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Apr 2021 05:59:40 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "297"
+						}
+					],
+					"cookie": [],
+					"body": "\"{\\\"Status\\\":\\\"Success\\\",\\\"Message\\\":\\\"Login Successful..\\\",\\\"output_data\\\":{\\\"ID\\\":0,\\\"TokenValue\\\":null,\\\"UserID\\\":\\\"product.admin\\\",\\\"Role\\\":\\\"Product Admin\\\",\\\"Created_Date\\\":\\\"16-04-2021 11.29.40 AM : dd/mm/yyyy\\\",\\\"Modified_Date\\\":\\\"16-04-2021 11.29.40 AM : dd/mm/yyyy\\\",\\\"IsActive\\\":true}}\""
+				}
+			]
+		},
+		{
+			"name": "AddProductCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\":\"product.admin\",\r\n    \"Password\":\"product.admin@123\",\r\n    \"Product_Category\" : \"Electronics\",\r\n    \"Product_Category_Desc\" : \"Get your desired electronic items like Camera, Watches etc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57742/api/Product/AddProductCategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57742",
+					"path": [
+						"api",
+						"Product",
+						"AddProductCategory"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AddProductCategory",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserName\":\"product.admin\",\r\n    \"Password\":\"product.admin@123\",\r\n    \"Product_Category\" : \"Electronics\",\r\n    \"Product_Category_Desc\" : \"Get your desired electronic items like Camera, Watches etc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:57742/api/Product/AddProductCategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "57742",
+							"path": [
+								"api",
+								"Product",
+								"AddProductCategory"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RTpcSW50ZXJ2aWV3XFNob3BCcmlkZ2VcU2hvcF9CcmlkZ2VcU2hvcF9CcmlkZ2VcYXBpXFByb2R1Y3RcQWRkUHJvZHVjdENhdGVnb3J5?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Apr 2021 06:09:23 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "122"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"Success\",\n    \"Message\": \"Product Category Added to Inventory!!\",\n    \"output_data\": \"Product category added to Inventory\"\n}"
+				}
+			]
+		},
+		{
+			"name": "EditProductCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\":\"product.admin\",\r\n    \"Password\":\"product.admin@123\",\r\n    \"Product_CategoryID\":\"1\",\r\n    \"Product_Category\" : \"Electronics\",\r\n    \"Product_Category_Desc\" : \"Get your desired electronic items like Camera, Watches, Laptops etc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57742/api/Product/EditProductCategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57742",
+					"path": [
+						"api",
+						"Product",
+						"EditProductCategory"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EditProductCategory",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserName\":\"product.admin\",\r\n    \"Password\":\"product.admin@123\",\r\n    \"Product_CategoryID\":\"1\",\r\n    \"Product_Category\" : \"Electronics\",\r\n    \"Product_Category_Desc\" : \"Get your desired electronic items like Camera, Watches, Laptops etc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:57742/api/Product/EditProductCategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "57742",
+							"path": [
+								"api",
+								"Product",
+								"EditProductCategory"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RTpcSW50ZXJ2aWV3XFNob3BCcmlkZ2VcU2hvcF9CcmlkZ2VcU2hvcF9CcmlkZ2VcYXBpXFByb2R1Y3RcRWRpdFByb2R1Y3RDYXRlZ29yeQ==?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Apr 2021 07:05:22 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "134"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"Success\",\n    \"Message\": \"Product Category Updated to Inventory!!\",\n    \"output_data\": \"Product Category Details updated to Inventory\"\n}"
+				}
+			]
+		},
+		{
+			"name": "AddProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\":\"product.admin\",\r\n    \"Password\":\"product.admin@123\",\r\n    \"Product_CategoryID\":\"1\",\r\n    \"Product\" : \"Nikon 3500 D\",\r\n    \"Product_Desc\" : \"Available \",\r\n    \"Price\":\"999.99\",\r\n    \"Quantity\":\"2\",\r\n    \"Stock\":\"In Stock\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57742/api/Product/AddProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57742",
+					"path": [
+						"api",
+						"Product",
+						"AddProduct"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AddProduct",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserName\":\"product.admin\",\r\n    \"Password\":\"product.admin@123\",\r\n    \"Product_CategoryID\":\"1\",\r\n    \"Product\" : \"Nikon 3500 D\",\r\n    \"Product_Desc\" : \"Available \",\r\n    \"Price\":\"999.99\",\r\n    \"Quantity\":\"2\",\r\n    \"Stock\":\"In Stock\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:57742/api/Product/AddProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "57742",
+							"path": [
+								"api",
+								"Product",
+								"AddProduct"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RTpcSW50ZXJ2aWV3XFNob3BCcmlkZ2VcU2hvcF9CcmlkZ2VcU2hvcF9CcmlkZ2VcYXBpXFByb2R1Y3RcQWRkUHJvZHVjdA==?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Apr 2021 07:25:17 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "121"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"Success\",\n    \"Message\": \"Product Category Added to Inventory!!\",\n    \"output_data\": \"Product Details added to Inventory\"\n}"
+				}
+			]
+		},
+		{
+			"name": "EditProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\":\"product.admin\",\r\n    \"Password\":\"product.admin@123\",\r\n    \"ProductID\":\"1\",\r\n    \"Product\" : \"Sony Cybershot\",\r\n    \"Product_Desc\" : \"You can click more colorful enchanced stills, comes with 2GB Internal Memory and 5MP\",\r\n    \"Price\":\"9999.99\",\r\n    \"Quantity\":\"1\",\r\n    \"Stock\":\"Out of Stock\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57742/api/Product/EditProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57742",
+					"path": [
+						"api",
+						"Product",
+						"EditProduct"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EditProduct",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserName\":\"product.admin\",\r\n    \"Password\":\"product.admin@123\",\r\n    \"ProductID\":\"1\",\r\n    \"Product\" : \"Sony Cybershot\",\r\n    \"Product_Desc\" : \"You can click more colorful enchanced stills, comes with 2GB Internal Memory and 5MP\",\r\n    \"Price\":\"9999.99\",\r\n    \"Quantity\":\"1\",\r\n    \"Stock\":\"Out of Stock\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:57742/api/Product/EditProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "57742",
+							"path": [
+								"api",
+								"Product",
+								"EditProduct"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RTpcSW50ZXJ2aWV3XFNob3BCcmlkZ2VcQWN0dWFsX1dvcmtpbmdfQ29kZVxTaG9wX0JyaWRnZVxhcGlcUHJvZHVjdFxFZGl0UHJvZHVjdA==?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 Apr 2021 08:21:59 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "88"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"Success\",\n    \"Message\": \"Product Details updated to Inventory\",\n    \"output_data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\":\"product.admin\",\r\n    \"Password\":\"product.admin@123\",\r\n    \"ProductID\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57742/api/Product/DeleteProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57742",
+					"path": [
+						"api",
+						"Product",
+						"DeleteProduct"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DeleteProduct",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserName\":\"product.admin\",\r\n    \"Password\":\"product.admin@123\",\r\n    \"ProductID\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:57742/api/Product/DeleteProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "57742",
+							"path": [
+								"api",
+								"Product",
+								"DeleteProduct"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RTpcSW50ZXJ2aWV3XFNob3BCcmlkZ2VcU2hvcF9CcmlkZ2VcU2hvcF9CcmlkZ2VcYXBpXFByb2R1Y3RcRGVsZXRlUHJvZHVjdA==?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 16 Apr 2021 07:35:50 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "84"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"Success\",\n    \"Message\": \"Product Deleted from Inventory!!\",\n    \"output_data\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "ProductList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\":\"product.admin\",\r\n    \"Password\":\"product.admin@123\",\r\n    \"ProductID\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57742/api/Product/ProductList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57742",
+					"path": [
+						"api",
+						"Product",
+						"ProductList"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProductList",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserName\":\"product.admin\",\r\n    \"Password\":\"product.admin@123\",\r\n    \"ProductID\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:57742/api/Product/ProductList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "57742",
+							"path": [
+								"api",
+								"Product",
+								"ProductList"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?RTpcSW50ZXJ2aWV3XFNob3BCcmlkZ2VcQWN0dWFsX1dvcmtpbmdfQ29kZVxTaG9wX0JyaWRnZVxhcGlcUHJvZHVjdFxQcm9kdWN0TGlzdA==?="
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 Apr 2021 05:24:05 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "391"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Status\": \"Success\",\n    \"Message\": \"List of Product Items\",\n    \"output_data\": [\n        {\n            \"PID\": 1,\n            \"Product\": \"Sony Cybershot\",\n            \"Product_Description\": \"You can click more colorful enchanced stills, comes with 2GB Internal Memory and 5MP\",\n            \"FK_PCID\": 1,\n            \"Created_By\": \"product.admin\",\n            \"Created_Date\": \" 16-55-2021\",\n            \"Modified_By\": \"product.admin\",\n            \"Modified_Date\": \" 16-59-2021\",\n            \"IsActive\": false,\n            \"tbl_Product_Category\": null\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
